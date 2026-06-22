@@ -71,7 +71,7 @@ export function Footer() {
             &copy; {new Date().getFullYear()} EduTrack. Hak cipta dilindungi.
           </p>
           <p className="text-[13px] text-text-muted">
-            Dibuat dengan ❤️ untuk pendidikan Indonesia
+            Dibuat untuk pendidikan Indonesia
           </p>
         </div>
       </div>
