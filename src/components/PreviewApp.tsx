@@ -3,9 +3,9 @@ import { useRef } from "react";
 import { Play } from "lucide-react";
 
 const screens = [
-  { src: "/assets/screenshots/screen_14.png", alt: "Attendance Input" },
-  { src: "/assets/screenshots/screen_28.png", alt: "Dashboard" },
-  { src: "/assets/screenshots/screen_4.png", alt: "Student Detail" },
+  { src: "/screenshots/screen_14.png", alt: "Catatan Kehadiran Anak" },
+  { src: "/screenshots/screen_28.png", alt: "Halaman Utama" },
+  { src: "/screenshots/screen_4.png", alt: "Profil Anak" },
 ];
 
 export function PreviewApp() {
@@ -43,11 +43,11 @@ export function PreviewApp() {
             Preview Aplikasi
           </span>
           <h2 className="font-['Plus_Jakarta_Sans'] text-[clamp(2rem,5vw,3.5rem)] font-bold tracking-tight text-primary">
-            Antarmuka yang{" "}
-            <span className="gradient-text">Intuitif & Bersih</span>
+            Tampilan yang{" "}
+            <span className="gradient-text">Mudah & Nyaman</span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-[16px] leading-relaxed text-text-secondary">
-            Dirancang khusus untuk guru TK agar mudah digunakan tanpa pelatihan khusus.
+            Semua fitur dirancang agar guru dan orang tua bisa langsung paham tanpa perlu panduan.
           </p>
         </motion.div>
 

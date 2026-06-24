@@ -5,45 +5,45 @@ import { X, Maximize2, ChevronLeft, ChevronRight, ArrowRight } from "lucide-reac
 // Hanya 6 screenshot unggulan untuk preview section ini
 const galleryItems = [
   {
-    title: "Splash Screen",
-    desc: "Layar pembuka EduTrack dengan branding yang bersih dan animasi loading yang halus.",
-    src: "/assets/screenshots/screen_25.png",
-    tag: "Onboarding",
+    title: "Layar Pembuka",
+    desc: "Tampilan awal EduTrack dengan logo yang cerah dan animasi yang menyenangkan.",
+    src: "/screenshots/screen_25.png",
+    tag: "Pembuka",
   },
   {
-    title: "Dashboard Utama",
-    desc: "Ringkasan metrik penting harian, grafik kehadiran, dan shortcut cepat ke fitur utama.",
-    src: "/assets/screenshots/screen_28.png",
-    tag: "Dashboard",
+    title: "Halaman Utama",
+    desc: "Semua informasi penting tersaji di satu layar agar guru bisa langsung bekerja.",
+    src: "/screenshots/screen_28.png",
+    tag: "Beranda",
   },
   {
-    title: "Halaman Login",
-    desc: "Autentikasi guru yang aman dengan desain modern. Email dan kata sandi terenkripsi penuh.",
-    src: "/assets/screenshots/screen_27.png",
-    tag: "Autentikasi",
+    title: "Halaman Masuk",
+    desc: "Masuk dengan mudah menggunakan akun yang aman dan terpercaya.",
+    src: "/screenshots/screen_27.png",
+    tag: "Masuk",
   },
   {
-    title: "Input Absensi Kelas",
-    desc: "Catat kehadiran seluruh siswa dalam satu layar. Satu ketukan untuk Hadir, Sakit, Izin, atau Alfa.",
-    src: "/assets/screenshots/screen_14.png",
-    tag: "Absensi",
+    title: "Catatan Kehadiran",
+    desc: "Tandai kehadiran semua anak dengan mudah — cukup satu ketukan untuk tiap anak.",
+    src: "/screenshots/screen_14.png",
+    tag: "Kehadiran",
   },
   {
-    title: "Detail & Aksi Siswa",
-    desc: "Profil lengkap siswa dengan akses cepat ke Timeline, Indikator, Data Fisik, Export, dan WhatsApp.",
-    src: "/assets/screenshots/screen_4.png",
-    tag: "Siswa",
+    title: "Halaman Anak",
+    desc: "Lihat semua informasi anak, cerita hariannya, dan bagikan langsung ke orang tua.",
+    src: "/screenshots/screen_4.png",
+    tag: "Profil Anak",
   },
   {
     title: "Grafik Pertumbuhan",
-    desc: "Visualisasi data tinggi dan berat badan anak dalam grafik yang akurat dan mudah dibaca.",
-    src: "/assets/screenshots/screen_9.png",
+    desc: "Lihat perkembangan tinggi dan berat badan anak dalam grafik yang cantik dan mudah dibaca.",
+    src: "/screenshots/screen_9.png",
     tag: "Pertumbuhan",
   },
   {
     title: "Profil Guru",
-    desc: "Manajemen akun guru, ringkasan kehadiran, dan riwayat aktivitas harian dalam satu halaman.",
-    src: "/assets/screenshots/screen_21.png",
+    desc: "Lihat akun Anda, rangkuman kehadiran, dan riwayat kegiatan harian dalam satu tempat.",
+    src: "/screenshots/screen_21.png",
     tag: "Profil",
   },
 ];
@@ -89,12 +89,11 @@ export function Gallery() {
             Galeri
           </span>
           <h2 className="font-['Plus_Jakarta_Sans'] text-[clamp(2rem,5vw,3.5rem)] font-bold tracking-tight text-primary">
-            Sekilas Tampilan{" "}
-            <span className="gradient-text">EduTrack</span>
+            Tampilan yang{" "}
+            <span className="gradient-text">Ramah & Mudah</span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-[16px] leading-relaxed text-text-secondary">
-            Beberapa layar unggulan yang paling sering digunakan. Klik untuk melihat lebih besar,
-            atau jelajahi semua halaman lengkap di bawah.
+            Dirancang agar semua orang bisa langsung menggunakannya tanpa perlu belajar lama.
           </p>
         </motion.div>
 

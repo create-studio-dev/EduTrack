@@ -11,33 +11,33 @@ import {
 const features = [
   {
     icon: LayoutDashboard,
-    title: "Dashboard Ringkas",
-    desc: "Lihat ringkasan perkembangan seluruh anak didik dalam satu layar. Informasi penting langsung terlihat.",
+    title: "Informasi Anak Sekilas",
+    desc: "Pantau perkembangan semua anak dalam satu layar yang mudah dipahami dan bebas ribet.",
   },
   {
     icon: ClipboardCheck,
-    title: "Pencatatan Harian",
-    desc: "Catat kehadiran, aktivitas, dan perkembangan anak dengan cepat melalui form yang dioptimalkan.",
+    title: "Catatan Harian Praktis",
+    desc: "Lebih mudah mencatat kehadiran dan aktivitas menyenangkan anak setiap hari tanpa perlu kertas.",
   },
   {
     icon: TrendingUp,
-    title: "Indikator Pertumbuhan",
-    desc: "Pantau tinggi, berat badan, dan indikator tumbuh kembang dengan grafik yang informatif.",
+    title: "Pantau Pertumbuhan",
+    desc: "Lihat perubahan tinggi dan berat badan anak melalui grafik yang cantik dan mudah dibaca orang tua.",
   },
   {
     icon: Clock,
-    title: "Timeline Aktivitas",
-    desc: "Lihat kronologi aktivitas dan pencapaian setiap anak sepanjang semester.",
+    title: "Rekam Jejak Anak",
+    desc: "Lihat semua momen penting, cerita lucu, dan pencapaian anak dari waktu ke waktu.",
   },
   {
     icon: FileText,
-    title: "Laporan Otomatis",
-    desc: "Generate laporan perkembangan anak dalam format PDF siap cetak untuk orang tua dan yayasan.",
+    title: "Laporan Instan",
+    desc: "Buat laporan perkembangan anak yang cantik dan siap dibagikan ke orang tua hanya dengan satu klik.",
   },
   {
     icon: UserRound,
-    title: "Profil Anak Lengkap",
-    desc: "Setiap anak memiliki profil detail dengan riwayat perkembangan, catatan khusus, dan foto.",
+    title: "Buku Cerita Anak",
+    desc: "Simpan cerita, foto, dan perjalanan perkembangan setiap anak di satu tempat yang rapi.",
   },
 ];
 
@@ -63,11 +63,11 @@ export function Features() {
             Fitur Unggulan
           </span>
           <h2 className="font-['Plus_Jakarta_Sans'] text-[clamp(2rem,5vw,3.5rem)] font-bold tracking-tight text-primary">
-            Semua yang Dibutuhkan{" "}
-            <span className="gradient-text">Guru TK</span>
+            Kemudahan untuk{" "}
+            <span className="gradient-text">Guru & Orang Tua</span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-[16px] leading-relaxed text-text-secondary">
-            Dirancang berdasarkan riset mendalam dengan puluhan guru TK untuk memastikan setiap fitur benar-benar berguna.
+            Fitur yang dirancang khusus agar guru dan orang tua bisa lebih fokus pada kebahagiaan dan perkembangan anak.
           </p>
         </motion.div>
 

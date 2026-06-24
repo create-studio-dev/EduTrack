@@ -9,7 +9,7 @@ import {
   List,
 } from "lucide-react";
 
-const logoSrc = "/assets/images/logo_no_background.png";
+const logoSrc = "/images/logo_no_background.png";
 
 // ─── Data semua 24 screenshot ─────────────────────────────────────────────────
 type ScreenshotItem = {
@@ -20,201 +20,201 @@ type ScreenshotItem = {
 };
 
 const allScreenshots: ScreenshotItem[] = [
-  // Onboarding
+  // Pembuka
   {
-    src: "/assets/screenshots/screen_25.png",
-    title: "Splash Screen",
-    desc: "Layar pembuka EduTrack dengan logo animasi dan indikator loading yang elegan.",
-    category: "Onboarding",
+    src: "/screenshots/screen_25.png",
+    title: "Layar Pembuka",
+    desc: "Tampilan awal EduTrack yang menyambut guru dengan logo dan animasi yang ramah.",
+    category: "Pembuka",
   },
   {
-    src: "/assets/screenshots/screen_27.png",
-    title: "Login — EduTrack",
-    desc: "Halaman masuk dengan branding EduTrack terbaru. Email & kata sandi dienkripsi penuh.",
-    category: "Onboarding",
+    src: "/screenshots/screen_27.png",
+    title: "Halaman Masuk",
+    desc: "Masuk ke aplikasi dengan aman dan mudah menggunakan akun sekolah Anda.",
+    category: "Pembuka",
   },
   {
-    src: "/assets/screenshots/screen_23.png",
-    title: "Login — TK Monitor",
-    desc: "Versi login awal sebelum rebranding, menampilkan desain enterprise yang bersih.",
-    category: "Onboarding",
-  },
-
-  // Dashboard
-  {
-    src: "/assets/screenshots/screen_28.png",
-    title: "Dashboard Utama",
-    desc: "Ringkasan metrik kelas, grafik kehadiran interaktif, dan notifikasi terbaru.",
-    category: "Dashboard",
+    src: "/screenshots/screen_23.png",
+    title: "Halaman Masuk (Lama)",
+    desc: "Tampilan masuk versi sebelumnya dengan desain yang bersih dan rapi.",
+    category: "Pembuka",
   },
 
-  // Siswa
+  // Beranda
   {
-    src: "/assets/screenshots/screen_2.png",
+    src: "/screenshots/screen_28.png",
+    title: "Halaman Utama",
+    desc: "Semua informasi penting kelas tersaji dalam satu layar yang nyaman.",
+    category: "Beranda",
+  },
+
+  // Data Anak
+  {
+    src: "/screenshots/screen_2.png",
     title: "Daftar Kelas",
-    desc: "Halaman Kelola Siswa menampilkan semua kelas yang tersedia beserta jumlah siswa dan tingkat.",
-    category: "Siswa",
+    desc: "Lihat semua kelas yang ada beserta jumlah anak di masing-masing kelas.",
+    category: "Data Anak",
   },
   {
-    src: "/assets/screenshots/screen_3.png",
-    title: "Daftar Siswa per Kelas",
-    desc: "List siswa dalam kelas TK B2–Kenanga dengan info gender, usia, dan search bar.",
-    category: "Siswa",
+    src: "/screenshots/screen_3.png",
+    title: "Daftar Anak per Kelas",
+    desc: "Lihat semua anak dalam satu kelas lengkap dengan nama dan informasi singkat mereka.",
+    category: "Data Anak",
   },
   {
-    src: "/assets/screenshots/screen_4.png",
-    title: "Detail & Aksi Siswa",
-    desc: "Profil siswa dengan shortcut ke Timeline, Indikator, Data Fisik, Export PDF, dan kirim WhatsApp.",
-    category: "Siswa",
+    src: "/screenshots/screen_4.png",
+    title: "Profil Anak",
+    desc: "Lihat semua informasi anak, kirim laporan ke orang tua via WhatsApp, dan banyak lagi.",
+    category: "Data Anak",
   },
   {
-    src: "/assets/screenshots/screen_16.png",
-    title: "Manajemen Siswa",
-    desc: "Tampilan kelola siswa per kelas dengan tombol edit dan hapus untuk setiap entri.",
-    category: "Siswa",
+    src: "/screenshots/screen_16.png",
+    title: "Kelola Data Anak",
+    desc: "Ubah atau hapus data anak dengan mudah sesuai kebutuhan.",
+    category: "Data Anak",
   },
   {
-    src: "/assets/screenshots/screen_17.png",
-    title: "Edit Data Siswa",
-    desc: "Form edit profil siswa mencakup nama lengkap, nama panggilan, tanggal lahir, jenis kelamin, dan kontak orang tua.",
-    category: "Siswa",
+    src: "/screenshots/screen_17.png",
+    title: "Edit Data Anak",
+    desc: "Perbarui nama, tanggal lahir, dan informasi orang tua anak kapan saja.",
+    category: "Data Anak",
   },
   {
-    src: "/assets/screenshots/screen_18.png",
-    title: "Tambah Siswa Baru",
-    desc: "Form penambahan siswa baru dengan semua field informasi dasar dan kontak wali.",
-    category: "Siswa",
-  },
-
-  // Absensi
-  {
-    src: "/assets/screenshots/screen_14.png",
-    title: "Input Absensi Kelas",
-    desc: "Input kehadiran harian seluruh siswa di kelas dalam satu layar — Hadir, Sakit, Izin, Libur, Alfa.",
-    category: "Absensi",
-  },
-  {
-    src: "/assets/screenshots/screen_12.png",
-    title: "Riwayat Absensi",
-    desc: "Rekap kehadiran kelas dengan filter rentang tanggal dan persentase kehadiran harian.",
-    category: "Absensi",
-  },
-  {
-    src: "/assets/screenshots/screen_13.png",
-    title: "Detail Absensi per Hari",
-    desc: "Rincian status kehadiran setiap siswa pada hari tertentu — collapsed & expanded view.",
-    category: "Absensi",
+    src: "/screenshots/screen_18.png",
+    title: "Tambah Anak Baru",
+    desc: "Daftarkan anak baru dengan mengisi informasi dasar dan kontak orang tua.",
+    category: "Data Anak",
   },
 
-  // Indikator
+  // Kehadiran
   {
-    src: "/assets/screenshots/screen_6.png",
-    title: "Indikator Kesehatan",
-    desc: "Penilaian indikator kesehatan siswa harian: kebersihan diri, alergi, dan kualitas tidur.",
-    category: "Indikator",
+    src: "/screenshots/screen_14.png",
+    title: "Catat Kehadiran",
+    desc: "Tandai kehadiran semua anak dalam satu layar dengan mudah dan cepat.",
+    category: "Kehadiran",
   },
   {
-    src: "/assets/screenshots/screen_7.png",
-    title: "Indikator Akademik",
-    desc: "Checklist kesiapan akademik — menulis nama, berhitung, mengenal geometri, dan penilaian bintang.",
-    category: "Indikator",
+    src: "/screenshots/screen_12.png",
+    title: "Riwayat Kehadiran",
+    desc: "Lihat catatan kehadiran anak dari hari ke hari dalam tampilan yang rapi.",
+    category: "Kehadiran",
   },
   {
-    src: "/assets/screenshots/screen_8.png",
-    title: "Indikator Fisik & Kognitif",
-    desc: "Asesmen perkembangan motorik kasar, koordinasi kaki-mata, dan kemampuan keseimbangan.",
-    category: "Indikator",
+    src: "/screenshots/screen_13.png",
+    title: "Detail Kehadiran Harian",
+    desc: "Lihat status kehadiran setiap anak pada hari tertentu secara detail.",
+    category: "Kehadiran",
+  },
+
+  // Perkembangan Anak
+  {
+    src: "/screenshots/screen_6.png",
+    title: "Perkembangan Kesehatan",
+    desc: "Catat kondisi kesehatan anak hari ini seperti kebersihan diri dan kualitas tidur.",
+    category: "Perkembangan",
+  },
+  {
+    src: "/screenshots/screen_7.png",
+    title: "Perkembangan Belajar",
+    desc: "Pantau kemampuan belajar anak seperti menulis nama, berhitung, dan mengenal bentuk.",
+    category: "Perkembangan",
+  },
+  {
+    src: "/screenshots/screen_8.png",
+    title: "Perkembangan Fisik",
+    desc: "Catat kemampuan gerak dan koordinasi tubuh anak setiap harinya.",
+    category: "Perkembangan",
   },
 
   // Pertumbuhan
   {
-    src: "/assets/screenshots/screen_9.png",
+    src: "/screenshots/screen_9.png",
     title: "Grafik Pertumbuhan",
-    desc: "Visualisasi riwayat tinggi dan berat badan anak dalam grafik garis yang akurat.",
+    desc: "Lihat pertumbuhan tinggi dan berat badan anak dalam grafik yang mudah dipahami.",
     category: "Pertumbuhan",
   },
 
-  // Timeline
+  // Cerita Anak
   {
-    src: "/assets/screenshots/screen_5.png",
-    title: "Timeline Siswa",
-    desc: "Tambah catatan perkembangan harian siswa — kategori Umum, Pencapaian, atau Perhatian.",
-    category: "Timeline",
+    src: "/screenshots/screen_5.png",
+    title: "Cerita Harian Anak",
+    desc: "Tambahkan catatan momen spesial, pencapaian, atau hal penting dari hari anak.",
+    category: "Cerita Harian",
   },
 
-  // Laporan & Export
+  // Laporan
   {
-    src: "/assets/screenshots/screen_10.png",
-    title: "Export Laporan Siswa",
-    desc: "Pilih rentang tanggal dan format ekspor — PDF siap cetak atau Excel untuk analisis lanjutan.",
+    src: "/screenshots/screen_10.png",
+    title: "Cetak Laporan Anak",
+    desc: "Pilih rentang waktu dan buat laporan perkembangan anak siap cetak atau kirim.",
     category: "Laporan",
   },
   {
-    src: "/assets/screenshots/screen_11.png",
+    src: "/screenshots/screen_11.png",
     title: "Kirim Laporan via WhatsApp",
-    desc: "Bottom sheet untuk memilih format pengiriman laporan: pesan teks, PDF, Excel, atau buka chat WA langsung.",
+    desc: "Bagikan laporan perkembangan anak langsung ke orang tua melalui WhatsApp.",
     category: "Laporan",
   },
   {
-    src: "/assets/screenshots/screen_15.png",
+    src: "/screenshots/screen_15.png",
     title: "Laporan Kehadiran Kelas",
-    desc: "Laporan kehadiran kelas dengan pilihan kelas, periode, dan ekspor PDF atau Excel.",
+    desc: "Buat dan cetak laporan kehadiran seluruh anak dalam satu kelas dengan mudah.",
     category: "Laporan",
   },
 
-  // Import
+  // Tambah Massal
   {
-    src: "/assets/screenshots/screen_20.png",
-    title: "Import Data Siswa",
-    desc: "Panduan format kolom Excel dan pilihan pengaturan kelas untuk import data massal.",
-    category: "Import",
+    src: "/screenshots/screen_20.png",
+    title: "Tambah Data Massal",
+    desc: "Tambahkan banyak data anak sekaligus menggunakan file Excel yang sudah disiapkan.",
+    category: "Tambah Massal",
   },
   {
-    src: "/assets/screenshots/screen_19.png",
-    title: "Konfigurasi Import Kelas",
-    desc: "Pilih kelas tujuan import — gunakan kelas yang ada, buat kelas baru, atau tahun ajaran baru.",
-    category: "Import",
+    src: "/screenshots/screen_19.png",
+    title: "Pilih Kelas untuk Tambah Massal",
+    desc: "Pilih kelas tujuan untuk data anak yang akan ditambahkan sekaligus.",
+    category: "Tambah Massal",
   },
 
   // Profil
   {
-    src: "/assets/screenshots/screen_21.png",
+    src: "/screenshots/screen_21.png",
     title: "Profil Guru",
-    desc: "Halaman profil guru dengan edit foto, info akun, status kehadiran, dan tombol simpan perubahan.",
+    desc: "Lihat dan ubah foto serta informasi akun Anda, serta ringkasan kehadiran.",
     category: "Profil",
   },
   {
-    src: "/assets/screenshots/screen_22.png",
+    src: "/screenshots/screen_22.png",
     title: "Riwayat Kehadiran Guru",
-    desc: "Bagian bawah profil yang menampilkan ringkasan kehadiran dan riwayat per kelas.",
+    desc: "Lihat rangkuman kehadiran Anda per kelas dan per periode waktu.",
     category: "Profil",
   },
 ];
 
 const CATEGORIES = [
   "Semua",
-  "Onboarding",
-  "Dashboard",
-  "Siswa",
-  "Absensi",
-  "Indikator",
+  "Pembuka",
+  "Beranda",
+  "Data Anak",
+  "Kehadiran",
+  "Perkembangan",
   "Pertumbuhan",
-  "Timeline",
+  "Cerita Harian",
   "Laporan",
-  "Import",
+  "Tambah Massal",
   "Profil",
 ];
 
 const categoryColors: Record<string, string> = {
-  Onboarding: "bg-violet-100 text-violet-700 border-violet-200",
-  Dashboard: "bg-fuchsia-100 text-fuchsia-700 border-fuchsia-200",
-  Siswa: "bg-blue-100 text-blue-700 border-blue-200",
-  Absensi: "bg-emerald-100 text-emerald-700 border-emerald-200",
-  Indikator: "bg-amber-100 text-amber-700 border-amber-200",
+  Pembuka: "bg-violet-100 text-violet-700 border-violet-200",
+  Beranda: "bg-fuchsia-100 text-fuchsia-700 border-fuchsia-200",
+  "Data Anak": "bg-blue-100 text-blue-700 border-blue-200",
+  Kehadiran: "bg-emerald-100 text-emerald-700 border-emerald-200",
+  Perkembangan: "bg-amber-100 text-amber-700 border-amber-200",
   Pertumbuhan: "bg-rose-100 text-rose-700 border-rose-200",
-  Timeline: "bg-indigo-100 text-indigo-700 border-indigo-200",
+  "Cerita Harian": "bg-indigo-100 text-indigo-700 border-indigo-200",
   Laporan: "bg-cyan-100 text-cyan-700 border-cyan-200",
-  Import: "bg-orange-100 text-orange-700 border-orange-200",
+  "Tambah Massal": "bg-orange-100 text-orange-700 border-orange-200",
   Profil: "bg-teal-100 text-teal-700 border-teal-200",
 };
 
@@ -334,8 +334,8 @@ export function ScreenshotsPage() {
               </span>
             </h1>
             <p className="text-white/65 text-[16px] leading-relaxed max-w-lg mx-auto">
-              Dokumentasi visual lengkap setiap layar aplikasi — dari onboarding
-              hingga laporan, ditata berdasarkan kategori fitur.
+              Jelajahi semua tampilan aplikasi EduTrack — dari halaman awal hingga
+              laporan, dikelompokkan berdasarkan fiturnya.
             </p>
           </motion.div>
         </div>

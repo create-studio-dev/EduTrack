@@ -10,38 +10,38 @@ import {
 const installSteps = [
   {
     icon: Download,
-    title: "Download APK",
-    desc: "Unduh file APK langsung dari website resmi. File ringan, hanya 12 MB.",
+    title: "Download Aplikasi",
+    desc: "Unduh file aplikasi langsung dari tombol di bawah. Ukurannya sangat kecil, hanya 12 MB.",
   },
   {
     icon: ShieldCheck,
-    title: "Izinkan Sumber Tidak Dikenal",
-    desc: "Buka Pengaturan → Keamanan → Izinkan instalasi dari sumber tidak dikenal.",
+    title: "Izinkan Pemasangan",
+    desc: "Buka Pengaturan HP → Keamanan → Izinkan instalasi dari sumber yang tidak dikenal.",
   },
   {
     icon: CheckCircle2,
-    title: "Install Aplikasi",
-    desc: "Buka file APK yang sudah diunduh, lalu klik Install. Proses hanya beberapa detik.",
+    title: "Pasang Aplikasi",
+    desc: "Buka file yang sudah diunduh, lalu klik Install. Tunggu beberapa detik saja.",
   },
   {
     icon: BookOpen,
-    title: "Login & Mulai",
-    desc: "Masukkan kode sekolah dari admin. Aplikasi siap digunakan dalam hitungan menit.",
+    title: "Masuk & Mulai",
+    desc: "Masukkan kode pendaftaran sekolah dan aplikasi siap digunakan untuk mencatat cerita anak.",
   },
 ];
 
 const faqInstall = [
   {
-    q: "Apakah aplikasi aman?",
-    a: "Ya. Aplikasi melalui proses security review dan hanya meminta izin yang relevan. Semua data dienkripsi.",
+    q: "Apakah aplikasi ini aman?",
+    a: "Tentu. Aplikasi ini dirancang sangat aman untuk melindungi semua catatan dan foto anak-anak.",
   },
   {
-    q: "Minimal versi Android?",
-    a: "Android 6.0 (Marshmallow) ke atas. Kompatibel dengan 98% perangkat Android yang beredar di Indonesia.",
+    q: "Bisa dipasang di HP apa saja?",
+    a: "Sangat bisa! Aplikasi ini ringan dan kompatibel dengan hampir semua HP Android saat ini.",
   },
   {
-    q: "Bagaimana jika ada kendala?",
-    a: "Tim support kami siap membantu melalui WhatsApp dan telepon di jam kerja (Senin-Jumat, 08.00-17.00).",
+    q: "Bagaimana jika ada kendala saat instalasi?",
+    a: "Jangan khawatir, tim kami siap membantu Anda kapan saja melalui WhatsApp.",
   },
 ];
 
@@ -71,7 +71,7 @@ export function Installation() {
             <span className="gradient-text">5 Menit</span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-[16px] leading-relaxed text-text-secondary">
-            Tidak perlu teknisi. Guru bisa install sendiri dengan panduan sederhana berikut.
+            Sangat mudah dipasang. Ikuti langkah sederhana ini dan aplikasi siap menemani hari Anda.
           </p>
         </motion.div>
 
@@ -113,20 +113,30 @@ export function Installation() {
         >
           <a
             href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              alert("Download akan segera dimulai. Terima kasih telah menggunakan EduTrack!");
+            }}
             className="inline-flex items-center gap-2.5 rounded-2xl bg-primary px-8 py-4 text-[14px] font-semibold text-white shadow-xl shadow-primary/25 hover:shadow-2xl hover:shadow-primary/30 hover:bg-primary-light hover:-translate-y-0.5 transition-all duration-300 w-full sm:w-auto justify-center"
           >
             <Download className="h-[18px] w-[18px]" />
-            Download APK (12 MB)
+            Download Aplikasi (12 MB)
           </a>
           <a
-            href="#"
+            href="#faq"
+            onClick={(e) => {
+              e.preventDefault();
+              document.querySelector("#faq")?.scrollIntoView({ behavior: "smooth" });
+            }}
             className="inline-flex items-center gap-2.5 rounded-2xl bg-white px-8 py-4 text-[14px] font-semibold text-primary border border-border hover:border-primary/20 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 w-full sm:w-auto justify-center"
           >
             <BookOpen className="h-[18px] w-[18px]" />
-            Panduan Instalasi
+            Panduan FAQ
           </a>
           <a
-            href="#"
+            href="https://wa.me/1234567890"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2.5 rounded-2xl bg-white px-8 py-4 text-[14px] font-semibold text-secondary border border-border hover:border-secondary/20 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 w-full sm:w-auto justify-center"
           >
             <HeadphonesIcon className="h-[18px] w-[18px]" />

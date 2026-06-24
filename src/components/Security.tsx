@@ -4,33 +4,33 @@ import { Shield, Lock, Server, Fingerprint, Eye, FileKey2 } from "lucide-react";
 const securityItems = [
   {
     icon: Lock,
-    title: "Enkripsi End-to-End",
-    desc: "Semua data anak dienkripsi menggunakan AES-256, standar yang sama digunakan oleh perbankan.",
+    title: "Sangat Aman",
+    desc: "Semua catatan anak dijaga ketat agar tidak bisa dilihat oleh orang luar.",
   },
   {
     icon: Server,
-    title: "Server Indonesia",
-    desc: "Data disimpan di server lokal Indonesia. Latensi rendah dan sesuai regulasi PDP.",
+    title: "Mudah Diakses",
+    desc: "Cepat dan lancar digunakan kapan pun guru dan orang tua membutuhkannya.",
   },
   {
     icon: Fingerprint,
-    title: "Autentikasi Aman",
-    desc: "Login dengan kode unik sekolah. Hanya guru terdaftar yang dapat mengakses data.",
+    title: "Hanya Untuk Anda",
+    desc: "Hanya guru dan sekolah terdaftar yang dapat melihat dan mengisi catatan anak.",
   },
   {
     icon: Eye,
     title: "Privasi Terjaga",
-    desc: "Data setiap anak hanya dapat diakses oleh wali kelas dan kepala sekolah yang berwenang.",
+    desc: "Catatan perkembangan anak hanya dibagikan kepada guru dan orang tua anak tersebut.",
   },
   {
     icon: FileKey2,
-    title: "Backup Otomatis",
-    desc: "Data dicadangkan setiap hari. Tidak ada risiko kehilangan data karena kesalahan teknis.",
+    title: "Tidak Akan Hilang",
+    desc: "Semua cerita dan foto tersimpan dengan aman setiap saat dan tidak akan pernah hilang.",
   },
   {
     icon: Shield,
-    title: "Audit Berkala",
-    desc: "Sistem melalui security audit rutin untuk memastikan tidak ada celah keamanan.",
+    title: "Terus Dijaga",
+    desc: "Kami selalu memastikan aplikasi ini menjadi tempat yang aman untuk menyimpan momen anak.",
   },
 ];
 
@@ -98,11 +98,10 @@ export function Security() {
         >
           <Shield className="h-8 w-8 text-primary mx-auto mb-3" />
           <p className="text-[16px] font-semibold text-primary">
-            Sesuai dengan UU Perlindungan Data Pribadi Indonesia
+            Sangat Aman & Terpercaya
           </p>
           <p className="text-[14px] text-text-secondary mt-1.5 max-w-lg mx-auto">
-            Platform ini dirancang memenuhi standar regulasi perlindungan data
-            terbaru di Indonesia. Data Anda adalah milik Anda sepenuhnya.
+            Aplikasi ini dirancang untuk memastikan bahwa cerita, foto, dan perjalanan anak Anda selalu aman dan hanya milik Anda sepenuhnya.
           </p>
         </motion.div>
       </div>

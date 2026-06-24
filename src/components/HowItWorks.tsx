@@ -5,26 +5,26 @@ const steps = [
   {
     number: "01",
     icon: ClipboardList,
-    title: "Input Data Harian",
-    desc: "Guru mencatat aktivitas, kehadiran, dan observasi harian setiap anak melalui form yang ringkas.",
+    title: "Mencatat Kegiatan",
+    desc: "Guru mencatat cerita hari ini, kehadiran, dan momen spesial anak dengan mudah.",
   },
   {
     number: "02",
     icon: Upload,
-    title: "Sinkronisasi Cloud",
-    desc: "Data otomatis tersimpan dan tersinkronisasi. Kepala sekolah dapat mengakses dashboard real-time.",
+    title: "Tersimpan Aman",
+    desc: "Semua catatan tersimpan rapi dan aman. Guru dan kepala sekolah dapat melihatnya kapan saja.",
   },
   {
     number: "03",
     icon: LineChart,
-    title: "Analisis Otomatis",
-    desc: "Sistem mengolah data menjadi grafik pertumbuhan, indikator perkembangan, dan alert jika ada anomali.",
+    title: "Melihat Perkembangan",
+    desc: "Catatan anak secara otomatis disusun menjadi rangkuman perkembangan yang cantik.",
   },
   {
     number: "04",
     icon: FileCheck,
-    title: "Laporan & Insight",
-    desc: "Generate laporan perkembangan anak dalam satu klik. Siap dibagikan ke orang tua dan yayasan.",
+    title: "Membagikan Cerita",
+    desc: "Guru dapat membagikan laporan perkembangan anak kepada orang tua dalam sekejap.",
   },
 ];
 
@@ -50,11 +50,11 @@ export function HowItWorks() {
             Cara Kerja
           </span>
           <h2 className="font-['Plus_Jakarta_Sans'] text-[clamp(2rem,5vw,3.5rem)] font-bold tracking-tight text-primary">
-            Proses yang{" "}
-            <span className="gradient-text">Sederhana & Efisien</span>
+            Bagaimana Aplikasi Ini{" "}
+            <span className="gradient-text">Membantu?</span>
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-[16px] leading-relaxed text-text-secondary">
-            Dari pencatatan hingga laporan, semua berjalan dalam alur yang sudah dioptimalkan untuk kebutuhan TK.
+            Hanya butuh beberapa langkah mudah agar guru dapat memantau dan berbagi kebahagiaan anak.
           </p>
         </motion.div>
 

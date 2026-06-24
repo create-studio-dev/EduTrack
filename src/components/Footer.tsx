@@ -1,11 +1,26 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 
-const logoSrc = "/assets/images/logo_no_background.png";
+const logoSrc = "/images/logo_no_background.png";
 
 const footerLinks = {
-  Produk: ["Fitur", "Galeri", "Instalasi", "Keamanan", "FAQ"],
-  Perusahaan: ["Tentang Kami", "Blog", "Karir", "Kontak"],
-  Legal: ["Kebijakan Privasi", "Syarat Layanan", "Cookie Policy"],
+  Produk: [
+    { label: "Fitur", href: "#features" },
+    { label: "Galeri", href: "#gallery" },
+    { label: "Instalasi", href: "#installation" },
+    { label: "Keamanan", href: "#security" },
+    { label: "FAQ", href: "#faq" },
+  ],
+  Perusahaan: [
+    { label: "Tentang Kami", href: "#" },
+    { label: "Blog", href: "#" },
+    { label: "Karir", href: "#" },
+    { label: "Kontak", href: "#" },
+  ],
+  Legal: [
+    { label: "Kebijakan Privasi", href: "#" },
+    { label: "Syarat Layanan", href: "#" },
+    { label: "Cookie Policy", href: "#" },
+  ],
 };
 
 export function Footer() {
@@ -24,8 +39,8 @@ export function Footer() {
               </span>
             </a>
             <p className="text-[14px] leading-relaxed text-text-secondary max-w-sm mb-5">
-              Aplikasi monitoring tumbuh kembang anak untuk guru TK. Dibuat
-              dengan sepenuh hati untuk pendidikan anak usia dini Indonesia.
+              Buku penghubung digital untuk orang tua dan guru TK. Dibuat
+              dengan sepenuh hati untuk membantu memantau kebahagiaan anak.
             </p>
             <div className="space-y-2.5">
               <div className="flex items-center gap-2.5 text-[13px] text-text-secondary">
@@ -51,12 +66,18 @@ export function Footer() {
               </h4>
               <ul className="space-y-2.5">
                 {links.map((link) => (
-                  <li key={link}>
+                  <li key={link.label}>
                     <a
-                      href="#"
+                      href={link.href}
+                      onClick={(e) => {
+                        if (link.href.startsWith("#") && link.href !== "#") {
+                          e.preventDefault();
+                          document.querySelector(link.href)?.scrollIntoView({ behavior: "smooth" });
+                        }
+                      }}
                       className="text-[14px] text-text-secondary hover:text-primary transition-colors link-underline"
                     >
-                      {link}
+                      {link.label}
                     </a>
                   </li>
                 ))}
@@ -71,7 +92,7 @@ export function Footer() {
             &copy; {new Date().getFullYear()} EduTrack. Hak cipta dilindungi.
           </p>
           <p className="text-[13px] text-text-muted">
-            Dibuat untuk pendidikan Indonesia
+            Dibuat dengan ❤️ untuk pendidikan Indonesia
           </p>
         </div>
       </div>

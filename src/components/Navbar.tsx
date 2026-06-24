@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { cn } from "@/utils/cn";
 import { Menu, X, SmartphoneIcon } from "lucide-react";
 
-const logoSrc = "/assets/images/logo_no_background.png";
+const logoSrc = "/images/logo_no_background.png";
 
 const navLinks = [
   { href: "#hero", label: "Beranda" },

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Download, ArrowRight } from "lucide-react";
 
-const logoSrc = "/assets/images/logo_no_background.png";
+const logoSrc = "/images/logo_no_background.png";
 
 export function CTA() {
   return (
@@ -41,25 +41,30 @@ export function CTA() {
           </div>
 
           <h2 className="font-['Plus_Jakarta_Sans'] text-[clamp(2.25rem,5vw,3.75rem)] font-extrabold leading-[1.1] tracking-tight text-primary">
-            Mulai Pantau Perkembangan{" "}
-            <span className="gradient-text">Anak Didik Anda</span>
+            Mulai Simpan Momen Berharga{" "}
+            <span className="gradient-text">Anak Anda Hari Ini</span>
           </h2>
 
           <p className="mx-auto mt-6 max-w-lg text-[16px] leading-relaxed text-text-secondary">
-            Unduh aplikasi sekarang dan rasakan kemudahan monitoring tumbuh
-            kembang anak. Gratis untuk 30 anak pertama.
+            Unduh aplikasi sekarang dan rasakan betapa mudahnya mencatat serta membagikan cerita perkembangan anak setiap hari.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3">
             <a
-              href="#"
+              href="#installation"
+              onClick={(e) => {
+                e.preventDefault();
+                document.querySelector("#installation")?.scrollIntoView({ behavior: "smooth" });
+              }}
               className="inline-flex items-center gap-2.5 rounded-2xl bg-primary px-8 py-4 text-[15px] font-semibold text-white shadow-xl shadow-primary/25 hover:shadow-2xl hover:shadow-primary/30 hover:bg-primary-light hover:-translate-y-0.5 transition-all duration-300"
             >
               <Download className="h-[18px] w-[18px]" />
-              Download APK Sekarang
+              Download Sekarang
             </a>
             <a
-              href="#"
+              href="https://wa.me/1234567890"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2.5 rounded-2xl bg-white px-8 py-4 text-[15px] font-semibold text-primary border border-border hover:border-primary/20 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 group"
             >
               Hubungi Kami
@@ -68,7 +73,7 @@ export function CTA() {
           </div>
 
           <p className="mt-6 text-[13px] text-text-muted">
-            Versi 2.4.1 · Android 6.0+ · 12 MB · Update terakhir: Januari 2026
+            Ukuran aplikasi kecil, hemat kuota, dan mudah digunakan oleh siapa saja.
           </p>
         </motion.div>
       </div>

@@ -36,7 +36,7 @@ export function Hero() {
         <motion.div {...fadeUpProps(0)} className="mb-6">
           <span className="inline-flex items-center gap-2 rounded-full border border-primary/10 bg-primary/5 px-4 py-1.5 text-[13px] font-medium text-primary">
             <span className="flex h-2 w-2 rounded-full bg-secondary animate-pulse" />
-            Aplikasi Monitoring Android
+            Aplikasi Tumbuh Kembang
           </span>
         </motion.div>
 
@@ -52,9 +52,7 @@ export function Hero() {
           {...fadeUpProps(0.2)}
           className="mx-auto mt-6 max-w-2xl text-[17px] leading-relaxed text-text-secondary md:text-[18px]"
         >
-          Aplikasi monitoring profesional untuk guru TK dalam mencatat dan
-          memantau perkembangan anak didik. Akurat, real-time, dan mudah
-          digunakan.
+          Teman terbaik guru dan orang tua untuk mencatat setiap momen berharga perkembangan anak di sekolah dengan mudah dan praktis.
         </motion.p>
 
         <motion.div
@@ -63,13 +61,21 @@ export function Hero() {
         >
           <a
             href="#installation"
+            onClick={(e) => {
+              e.preventDefault();
+              document.querySelector("#installation")?.scrollIntoView({ behavior: "smooth" });
+            }}
             className="inline-flex items-center gap-2.5 rounded-2xl bg-primary px-7 py-3.5 text-[14px] font-semibold text-white shadow-xl shadow-primary/25 hover:shadow-2xl hover:shadow-primary/30 hover:bg-primary-light hover:-translate-y-0.5 transition-all duration-300"
           >
             <SmartphoneIcon className="h-[18px] w-[18px]" />
-            Download APK
+            Download Aplikasi
           </a>
           <a
             href="#features"
+            onClick={(e) => {
+              e.preventDefault();
+              document.querySelector("#features")?.scrollIntoView({ behavior: "smooth" });
+            }}
             className="inline-flex items-center gap-2.5 rounded-2xl bg-white px-7 py-3.5 text-[14px] font-semibold text-primary border border-border hover:border-primary/20 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
           >
             Lihat Fitur
@@ -84,8 +90,8 @@ export function Hero() {
         >
           {[
             { icon: Users, label: "500+ Guru TK", sub: "Pengguna Aktif" },
-            { icon: ShieldCheck, label: "Data Aman", sub: "Enkripsi Penuh" },
-            { icon: SmartphoneIcon, label: "Android 6.0+", sub: "Kompatibel" },
+            { icon: ShieldCheck, label: "Aman", sub: "Data Terjaga" },
+            { icon: SmartphoneIcon, label: "Praktis", sub: "Di Semua HP Android" },
           ].map((item, i) => (
             <div key={i} className="flex items-center gap-3 text-left">
               <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-primary/6">

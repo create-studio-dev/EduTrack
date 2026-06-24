@@ -4,32 +4,32 @@ import { ChevronDown, HelpCircle } from "lucide-react";
 
 const faqs = [
   {
-    q: "Apa itu TK Monitoring App?",
-    a: "TK Monitoring App adalah aplikasi Android yang membantu guru TK dalam mencatat, memantau, dan melaporkan perkembangan anak didik secara digital. Aplikasi ini menggantikan pencatatan manual di buku menjadi lebih terstruktur dan mudah dianalisis.",
+    q: "Apa itu EduTrack?",
+    a: "EduTrack adalah aplikasi yang membantu guru TK dan orang tua mencatat, memantau, dan membagikan cerita perkembangan anak dengan mudah. Aplikasi ini menggantikan buku penghubung fisik menjadi lebih praktis dan tersimpan rapi.",
   },
   {
     q: "Apakah aplikasi ini gratis?",
-    a: "Kami menyediakan versi gratis dengan fitur dasar yang bisa digunakan selamanya. Untuk fitur lanjutan seperti laporan PDF, analisis pertumbuhan, dan multi-user, tersedia paket berlangganan yang sangat terjangkau untuk sekolah.",
+    a: "Ada versi gratis yang bisa digunakan selamanya. Jika sekolah membutuhkan fitur tambahan seperti cetak rapor otomatis dan laporan tumbuh kembang, kami menyediakan paket berlangganan yang sangat terjangkau.",
   },
   {
-    q: "Berapa banyak anak yang bisa dimonitor?",
-    a: "Versi gratis mendukung hingga 30 anak per akun. Paket berbayar tidak memiliki batasan jumlah anak. Cocok untuk TK kecil hingga yayasan besar dengan banyak cabang.",
+    q: "Berapa banyak anak yang bisa didaftarkan?",
+    a: "Versi gratis bisa digunakan hingga 30 anak per kelas. Jika menggunakan paket berbayar, jumlah anak tidak dibatasi, cocok untuk TK kecil hingga yayasan besar.",
   },
   {
-    q: "Apakah perlu koneksi internet?",
-    a: "Aplikasi memerlukan koneksi internet untuk sinkronisasi data. Namun, input data harian bisa dilakukan secara offline dan akan otomatis tersinkronisasi ketika perangkat terhubung kembali ke internet.",
+    q: "Apakah butuh koneksi internet?",
+    a: "Ya, aplikasi membutuhkan internet agar cerita anak bisa langsung dibagikan. Tapi jangan khawatir, guru tetap bisa mengisi catatan walau tanpa internet, dan akan tersimpan otomatis saat kembali online.",
   },
   {
-    q: "Bagaimana cara mendapatkan kode sekolah?",
-    a: "Kode sekolah diberikan oleh admin yayasan atau kepala sekolah yang sudah terdaftar. Jika Anda adalah pendaftar pertama dari sekolah Anda, hubungi tim kami melalui WhatsApp untuk verifikasi dan aktivasi.",
+    q: "Bagaimana cara mulai menggunakannya?",
+    a: "Kode pendaftaran akan diberikan oleh kepala sekolah atau admin TK. Jika Anda baru pertama kali mendaftarkan sekolah Anda, silakan hubungi kami via WhatsApp untuk dibantu.",
   },
   {
-    q: "Apakah data bisa diekspor?",
-    a: "Ya. Semua data bisa diekspor dalam format PDF dan Excel. Laporan siap cetak untuk dibagikan kepada orang tua murid dan yayasan.",
+    q: "Apakah laporan bisa dicetak?",
+    a: "Tentu saja. Semua catatan perkembangan anak bisa dicetak dalam bentuk dokumen rapi untuk dibagikan kepada orang tua atau disimpan oleh sekolah.",
   },
   {
-    q: "Apakah bisa digunakan di tablet?",
-    a: "Tentu. Aplikasi dioptimalkan untuk layar smartphone dan tablet Android. Tampilan akan menyesuaikan secara otomatis dengan ukuran layar perangkat Anda.",
+    q: "Apakah bisa digunakan di tablet atau HP?",
+    a: "Bisa. Aplikasi ini dirancang agar nyaman digunakan baik di HP Android maupun tablet, dengan tampilan yang menyesuaikan layar secara otomatis.",
   },
 ];
 
