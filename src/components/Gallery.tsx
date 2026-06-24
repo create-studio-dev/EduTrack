@@ -156,7 +156,7 @@ export function Gallery() {
             className="inline-flex items-center gap-2.5 rounded-2xl bg-primary px-7 py-3.5 text-[14px] font-semibold text-white shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 hover:bg-primary-light hover:-translate-y-0.5 transition-all duration-300"
           >
             Lihat Semua {" "}
-            <span className="opacity-75 font-normal">24 Halaman Aplikasi</span>
+            <span className="opacity-75 font-normal">25 Halaman Aplikasi</span>
             <ArrowRight className="h-4 w-4" />
           </a>
         </motion.div>
